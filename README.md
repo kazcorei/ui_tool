@@ -32,9 +32,16 @@ Then use the ratio with your size values.
 
 ```dart
 
-    MaterialApp(      
-        home:  UIWrapper(
-            child: SplashScreen(), //Your first screen
+import 'package:ui_tool/ui_tool.dart';
+
+    Container(      
+        width: 200 + UI.ratio,
+        heighty: 250 + UI.ratio,
+        child:  Text(
+           "Sample Text which scales",
+           style: TextStyle(
+               fontSize: 16 * UI.ratio,
+           )
         ),
     ),
 
