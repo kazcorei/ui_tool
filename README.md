@@ -15,6 +15,8 @@ ui_tool: ^0.0.1
 
 Add the widget to your app like this (It automatically calculates the ratio):
 
+If the design is given with viewport sizes (iPhone 12 Pro Max):
+
 ```dart
 
     MaterialApp(      
@@ -22,6 +24,21 @@ Add the widget to your app like this (It automatically calculates the ratio):
             width:428, // Real pixel width will be 1284px
             height:926, // Real pixel height will be 2778px
             isViewport: true, // Viewport or Pixel
+            child: SplashScreen(), //Your first screen
+        ),
+    ),
+
+```
+
+If the design is given in device pixels (iPhone 12 Pro Max):
+
+```dart
+
+    MaterialApp(      
+        home:  UIWrapper(
+            width:1284, 
+            height:2778,  
+            isViewport: false, // Viewport or Pixel
             child: SplashScreen(), //Your first screen
         ),
     ),
