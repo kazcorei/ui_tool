@@ -1,7 +1,7 @@
 name: ui_tool
 description: Make the widgets more responsive
 version: 0.0.1
-homepage:
+homepage: https://github.com/kasun-u/ui_tool
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -14,5 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+repository: https://github.com/kasun-u/ui_tool
 
 flutter:

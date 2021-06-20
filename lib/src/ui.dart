@@ -13,7 +13,8 @@ class UI {
   static double wpx = 0;
   static double ratio = 1;
 
-  static void initialize(BuildContext context) {
+  static void initialize(BuildContext context, double widthDesign,
+      double heightDesign, bool isViewport) {
     isDarkMode = false;
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
@@ -21,12 +22,10 @@ class UI {
     wpx = width * MediaQuery.of(context).devicePixelRatio;
     isLandscape = height < width;
 
-    if (!isWeb) {
-      num deviceValue = pow((pow(width, 2) + pow(height, 2)), 0.5);
+    num designValue = pow((pow(widthDesign, 2) + pow(heightDesign, 2)), 0.5);
+    num deviceValue = pow((pow(width, 2) + pow(height, 2)), 0.5);
 
-      ratio = deviceValue / 1020.1274430187632;
-    } else
-      ratio = 1;
+    ratio = deviceValue / designValue;
 
     print("W=$width , H=$height \nWPX=$wpx , HPX=$hpx \nRatio = $ratio");
   }

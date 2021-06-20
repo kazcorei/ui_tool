@@ -1,14 +1,41 @@
 # ui_tool
 
-A new Flutter package project.
+With UI Tool you can easily make your app responsive for different screen sizes.
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Installation
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Add this to your `pubspec.yaml` dependencies:
+
+```
+ui_tool: ^0.0.1
+```
+
+## How to use
+
+Add the widget to your app like this (It automatically calculates the ratio):
+
+```dart
+
+    MaterialApp(      
+        home:  UIWrapper(
+            width:428, // Real pixel width will be 1284px
+            height:926, // Real pixel height will be 2778px
+            isViewport: true, // Viewport or Pixel
+            child: SplashScreen(), //Your first screen
+        ),
+    ),
+
+```
+
+Then use the ratio with your size values.
+
+```dart
+
+    MaterialApp(      
+        home:  UIWrapper(
+            child: SplashScreen(), //Your first screen
+        ),
+    ),
+
+```
