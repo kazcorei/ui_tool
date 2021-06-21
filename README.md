@@ -1,6 +1,17 @@
 # ui_tool
 
-With UI Tool you can easily make your app responsive for different screen sizes.
+With various screen sizes and pixel densities of mobile phones, it is difficult to maintain the consistency of the UI design. So, UI Tool is developed for every mobile phone screen size, which calculates the ratio of the current device compared to the originally designed device and then applies it to the Size parameters.(i.e If the UI is originally designed for iPhone 12 Pro Max, the UI on the iPhone 5s must be the similar.)
+
+
+These are the Initial views of UIs without applying Calculated Ratio.
+<p align='center'>
+    <img src="https://raw.githubusercontent.com/kasun-u/common/main/before.png" />
+</p>
+
+After applying the Calculated Ratio
+<p align='center'>
+    <img src="https://raw.githubusercontent.com/kasun-u/common/main/after.png" />
+</p>
 
 
 ## Installation
@@ -8,7 +19,7 @@ With UI Tool you can easily make your app responsive for different screen sizes.
 Add this to your `pubspec.yaml` dependencies:
 
 ```
-ui_tool: ^0.0.1
+ui_tool: ^0.1.1
 ```
 
 ## How to use
@@ -52,10 +63,10 @@ Then use the ratio with your size values.
 import 'package:ui_tool/ui_tool.dart';
 
     Container(      
-        width: 200 + UI.ratio,
-        heighty: 250 + UI.ratio,
+        width: 200 * UI.ratio,
+        height: 250 * UI.ratio,
         child:  Text(
-           "Sample Text which scales",
+           "Sample Responsive Text",
            style: TextStyle(
                fontSize: 16 * UI.ratio,
            )
