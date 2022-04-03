@@ -1,3 +1,6 @@
+## 0.2.0
+
+* Added ratio extension.
 ## 0.1.1
 
 * Update instructions.

@@ -19,7 +19,7 @@ After applying the Calculated Ratio
 Add this to your `pubspec.yaml` dependencies:
 
 ```
-ui_tool: ^0.1.1
+ui_tool: ^0.2.0
 ```
 
 ## How to use
@@ -30,31 +30,22 @@ If the design is given with viewport sizes (iPhone 12 Pro Max):
 
 ```dart
 
-    MaterialApp(      
-        home:  UIWrapper(
-            width:428, // Real pixel width will be 1284px
-            height:926, // Real pixel height will be 2778px
-            isViewport: true, // Viewport or Pixel
-            child: SplashScreen(), //Your first screen
-        ),
-    ),
+MaterialApp(
+      builder: (context, child) {
+        UI.initialize(
+            context,
+            viewportWidth: 428,
+            viewportHeight: 926,
+            );
+        return  MediaQuery(
+            data: MediaQuery.of(context).copyWith(textScaleFactor: UI.ratio),
+            child: child!,
+        );
+      },
+)
 
 ```
 
-If the design is given in device pixels (iPhone 12 Pro Max):
-
-```dart
-
-    MaterialApp(      
-        home:  UIWrapper(
-            width:1284, 
-            height:2778,  
-            isViewport: false, // Viewport or Pixel
-            child: SplashScreen(), //Your first screen
-        ),
-    ),
-
-```
 
 Then use the ratio with your size values.
 
@@ -63,12 +54,12 @@ Then use the ratio with your size values.
 import 'package:ui_tool/ui_tool.dart';
 
     Container(      
-        width: 200 * UI.ratio,
-        height: 250 * UI.ratio,
+        width: 200.r,
+        height: 250.r,
         child:  Text(
            "Sample Responsive Text",
            style: TextStyle(
-               fontSize: 16 * UI.ratio,
+               fontSize: 16, //Fonts will be automatically scaled
            )
         ),
     ),

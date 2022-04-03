@@ -1,6 +1,6 @@
 name: ui_tool
 description: With UI Tool you can easily make your app responsive for different screen sizes.
-version: 0.1.1
+version: 0.2.0
 homepage: https://github.com/kasun-u/ui_tool
 
 environment:
