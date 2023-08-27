@@ -20,8 +20,8 @@ After applying the Calculated Ratio
 
 Add this to your `pubspec.yaml` dependencies:
 
-```
-ui_tool: ^0.2.0
+```yml
+ui_tool: ^1.0.0
 ```
 
 ## How to use
