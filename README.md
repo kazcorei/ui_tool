@@ -5,12 +5,12 @@ With various screen sizes and pixel densities of mobile phones, it is difficult 
 
 These are the Initial views of UIs without applying Calculated Ratio.
 <p align='center'>
-    <img src="https://raw.githubusercontent.com/kasun-u/common/main/before.png" />
+    <img src="./resources/before.png" />
 </p>
 
 After applying the Calculated Ratio
 <p align='center'>
-    <img src="https://raw.githubusercontent.com/kasun-u/common/main/after.png" />
+    <img src="./resources/after.png" />
 </p>
 
 

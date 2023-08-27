@@ -1,10 +1,10 @@
 name: ui_tool
 description: With UI Tool you can easily make your app responsive for different screen sizes.
-version: 0.2.0
-homepage: https://github.com/kasun-u/ui_tool
+version: 1.0.0
+homepage: https://github.com/kazcorei/ui_tool
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -15,6 +15,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-repository: https://github.com/kasun-u/ui_tool
+repository: https://github.com/kazcorei/ui_tool
 
 flutter:

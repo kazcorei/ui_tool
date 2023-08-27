@@ -1,4 +1,7 @@
-## 0.2.0
+## 1.0.0
+
+* Final release after testing.
+* ## 0.2.0
 
 * Added ratio extension.
 ## 0.1.1
