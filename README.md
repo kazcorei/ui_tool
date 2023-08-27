@@ -1,4 +1,6 @@
-# ui_tool
+# UI TOOL
+### Make your apps responsive.
+---
 
 With various screen sizes and pixel densities of mobile phones, it is difficult to maintain the consistency of the UI design. So, UI Tool is developed for every mobile phone screen size, which calculates the ratio of the current device compared to the originally designed device and then applies it to the Size parameters.(i.e If the UI is originally designed for iPhone 12 Pro Max, the UI on the iPhone 5s must be the similar. This may cause fat-thumb problem. Use it wisely.)
 
